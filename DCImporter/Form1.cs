@@ -19,22 +19,22 @@ namespace DCImporter
     public partial class Form1 : Form
     {
 
-        IniData parsedData;
+        IniData iniGlobal;
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRead_Click(object sender, EventArgs e)
         {
             FileIniDataParser fileIniData = new FileIniDataParser();
             ;
             if (File.Exists(Directory.GetCurrentDirectory() + "\\DCImporter.ini"))
             {
-                parsedData = fileIniData.ReadFile(Directory.GetCurrentDirectory() + "\\DCImporter.ini");
-                string photoDirectory = parsedData["RX100"]["PHOTO_DIRECTORY"];
-                string lastFilename = parsedData["RX100"]["LASTFILE"];
+                iniGlobal = fileIniData.ReadFile(Directory.GetCurrentDirectory() + "\\DCImporter.ini");
+                string photoDirectory = iniGlobal["RX100"]["PHOTO_DIRECTORY"];
+                string lastFilename = iniGlobal["RX100"]["LASTFILE"];
 
                 textBoxPhotoDirectory.Text = photoDirectory;
                 textBoxLastFilename.Text = lastFilename;
@@ -53,6 +53,12 @@ namespace DCImporter
                 listBox1.Items.RemoveAt(0); // Remove 1st item
 
             }
+            else
+            {
+
+            }
+
+            Guid id = Guid.NewGuid();
 
         }
 
@@ -61,9 +67,9 @@ namespace DCImporter
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnCopy_Click(object sender, EventArgs e)
         {
-            string targetDirectory = parsedData["RX100"]["TARGET_DIRECTORY"];
+            string targetDirectory = iniGlobal["RX100"]["TARGET_DIRECTORY"];
 
             if (!System.IO.Directory.Exists(targetDirectory))
             {
