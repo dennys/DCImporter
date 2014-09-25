@@ -118,5 +118,10 @@ namespace DCImporter
             MessageBox.Show("Processing was completed");
             progressBar1.Value = 0;
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
