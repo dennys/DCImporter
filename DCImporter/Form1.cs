@@ -29,10 +29,36 @@ namespace DCImporter
         private void btnRead_Click(object sender, EventArgs e)
         {
             FileIniDataParser fileIniData = new FileIniDataParser();
-            ;
+            string diskId = null;
+            
             if (File.Exists(Directory.GetCurrentDirectory() + "\\DCImporter.ini"))
             {
                 iniGlobal = fileIniData.ReadFile(Directory.GetCurrentDirectory() + "\\DCImporter.ini");
+
+                string importDirectory = iniGlobal["GLOBAL"]["IMPORT_DIRECTORY"];
+                if (importDirectory.Substring(importDirectory.Length - 1, 1) != "\\")
+                {
+                    importDirectory = importDirectory + "\\";
+                }
+
+
+                if (File.Exists(importDirectory + "\\DCImport.ini"))
+                {
+                    FileIniDataParser fileIniDataImport = new FileIniDataParser();
+                    IniData iniImport = fileIniData.ReadFile(importDirectory + "DCImport.ini");
+                    diskId = iniImport["DCIMPORT"]["ID"];
+                }
+                else // Create file
+                {
+                    FileIniDataParser fileIniDataImport = new FileIniDataParser();
+                    IniData iniImport = new IniData();
+                    diskId = Guid.NewGuid().ToString();
+                    iniImport.Sections.AddSection("DCIMPORT");
+                    iniImport["DCIMPORT"]["ID"] = diskId;
+                    fileIniDataImport.WriteFile(importDirectory + "DCImport.ini", iniImport);
+                }
+
+
                 string photoDirectory = iniGlobal["RX100"]["PHOTO_DIRECTORY"];
                 string lastFilename = iniGlobal["RX100"]["LASTFILE"];
 
