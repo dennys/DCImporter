@@ -45,6 +45,7 @@
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -52,7 +53,7 @@
             // 
             // buttonRead
             // 
-            this.buttonRead.Location = new System.Drawing.Point(188, 37);
+            this.buttonRead.Location = new System.Drawing.Point(271, 37);
             this.buttonRead.Name = "buttonRead";
             this.buttonRead.Size = new System.Drawing.Size(66, 26);
             this.buttonRead.TabIndex = 0;
@@ -66,7 +67,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "RX100",
             "G6"});
-            this.comboBox1.Location = new System.Drawing.Point(38, 37);
+            this.comboBox1.Location = new System.Drawing.Point(96, 37);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(129, 20);
             this.comboBox1.TabIndex = 2;
@@ -202,11 +203,21 @@
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(50, 38);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 12);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Profile:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 441);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
@@ -245,6 +256,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+        private System.Windows.Forms.Label label4;
     }
 }
 
