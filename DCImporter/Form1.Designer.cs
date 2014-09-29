@@ -46,10 +46,24 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxPhotoDirectory = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxLastFilename = new System.Windows.Forms.TextBox();
+            this.textBoxPhotoLastFilename = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.textBoxPhotoCommand = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -57,6 +71,10 @@
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -189,21 +207,23 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.textBoxPhotoCommand);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.textBoxPhotoDirectory);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.textBoxLastFilename);
+            this.panel3.Controls.Add(this.textBoxPhotoLastFilename);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(3, 18);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(398, 93);
+            this.panel3.Size = new System.Drawing.Size(398, 124);
             this.panel3.TabIndex = 12;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(2, 15);
+            this.label2.Location = new System.Drawing.Point(2, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 12);
             this.label2.TabIndex = 13;
@@ -211,31 +231,31 @@
             // 
             // textBoxPhotoDirectory
             // 
-            this.textBoxPhotoDirectory.Location = new System.Drawing.Point(54, 12);
+            this.textBoxPhotoDirectory.Location = new System.Drawing.Point(59, 12);
             this.textBoxPhotoDirectory.Name = "textBoxPhotoDirectory";
-            this.textBoxPhotoDirectory.Size = new System.Drawing.Size(194, 22);
+            this.textBoxPhotoDirectory.Size = new System.Drawing.Size(291, 22);
             this.textBoxPhotoDirectory.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 40);
+            this.label1.Location = new System.Drawing.Point(2, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 12);
             this.label1.TabIndex = 11;
             this.label1.Text = "Last file:";
             // 
-            // textBoxLastFilename
+            // textBoxPhotoLastFilename
             // 
-            this.textBoxLastFilename.Location = new System.Drawing.Point(54, 40);
-            this.textBoxLastFilename.Name = "textBoxLastFilename";
-            this.textBoxLastFilename.Size = new System.Drawing.Size(194, 22);
-            this.textBoxLastFilename.TabIndex = 10;
+            this.textBoxPhotoLastFilename.Location = new System.Drawing.Point(59, 40);
+            this.textBoxPhotoLastFilename.Name = "textBoxPhotoLastFilename";
+            this.textBoxPhotoLastFilename.Size = new System.Drawing.Size(291, 22);
+            this.textBoxPhotoLastFilename.TabIndex = 10;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1, 71);
+            this.label3.Location = new System.Drawing.Point(3, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 14;
@@ -245,9 +265,9 @@
             // 
             this.panel4.Controls.Add(this.listBox1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 111);
+            this.panel4.Location = new System.Drawing.Point(3, 142);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(398, 364);
+            this.panel4.Size = new System.Drawing.Size(398, 333);
             this.panel4.TabIndex = 13;
             // 
             // listBox1
@@ -257,14 +277,143 @@
             this.listBox1.ItemHeight = 12;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(398, 364);
+            this.listBox1.Size = new System.Drawing.Size(398, 333);
             this.listBox1.TabIndex = 11;
+            // 
+            // textBoxPhotoCommand
+            // 
+            this.textBoxPhotoCommand.Location = new System.Drawing.Point(59, 68);
+            this.textBoxPhotoCommand.Name = "textBoxPhotoCommand";
+            this.textBoxPhotoCommand.Size = new System.Drawing.Size(291, 22);
+            this.textBoxPhotoCommand.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(2, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 12);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Command:";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.groupBox2);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(404, 65);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(443, 478);
+            this.panel5.TabIndex = 14;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.panel7);
+            this.groupBox2.Controls.Add(this.panel6);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(443, 478);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Video";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.textBox2);
+            this.panel6.Controls.Add(this.textBox3);
+            this.panel6.Controls.Add(this.label6);
+            this.panel6.Controls.Add(this.label7);
+            this.panel6.Controls.Add(this.label8);
+            this.panel6.Controls.Add(this.label9);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(3, 18);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(437, 124);
+            this.panel6.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 67);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 12);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Command:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(8, 95);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Files:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 11);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 12);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Directory:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 40);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(45, 12);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Last file:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(71, 62);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(291, 22);
+            this.textBox1.TabIndex = 23;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(71, 6);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(291, 22);
+            this.textBox2.TabIndex = 22;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(71, 34);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(291, 22);
+            this.textBox3.TabIndex = 21;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.listBox2);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(3, 142);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(437, 333);
+            this.panel7.TabIndex = 1;
+            // 
+            // listBox2
+            // 
+            this.listBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 12;
+            this.listBox2.Location = new System.Drawing.Point(0, 0);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(437, 333);
+            this.listBox2.TabIndex = 12;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 572);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -282,6 +431,11 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,9 +462,23 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxPhotoDirectory;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxLastFilename;
+        private System.Windows.Forms.TextBox textBoxPhotoLastFilename;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxPhotoCommand;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.ListBox listBox2;
     }
 }
 

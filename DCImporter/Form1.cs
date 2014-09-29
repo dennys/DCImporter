@@ -94,7 +94,7 @@ namespace DCImporter
                 string lastFilename = iniGlobal["RX100"]["LASTFILE"];
 
                 textBoxPhotoDirectory.Text = photoDirectory;
-                textBoxLastFilename.Text = lastFilename;
+                textBoxPhotoLastFilename.Text = lastFilename;
 
                 string[] filePaths = Directory.GetFiles(@photoDirectory, "*.jpg", SearchOption.AllDirectories);
                 Boolean start = false;
