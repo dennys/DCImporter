@@ -1,7 +1,7 @@
 repo_name: dennys/DCImporter
-report_id: 1cecb43cc4c4334378bea94f0c73b9bd
+report_id: 36a031f20917e4acc8276e3975f7f808
 repo_type: Public
-timestamp: '2023-11-09T13:06:28+00:00'
+timestamp: '2023-12-14T09:24:43+00:00'
 requested_by: dennys
 provider: github
 branch: master
@@ -17,7 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6755/2c45151a4a11d3a3c8e71bb34dd069d6_400x400.png
-  detection_source_url: DCImporter/DCImporter.csproj
+  detection_source_url: https://github.com/dennys/DCImporter/blob/master/DCImporter/DCImporter.csproj
   detection_source: DCImporter/DCImporter.csproj
   last_updated_by: Dennys
   last_updated_on: 2014-09-23 14:49:38.000000000 Z
@@ -86,7 +86,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/14139/default_b83e8bc58faf2b296cff1198fce442f2bb64617b.png
-  detection_source_url: DCImporter/packages.config
+  detection_source_url: https://github.com/dennys/DCImporter/blob/master/DCImporter/packages.config
   detection_source: DCImporter/packages.config
   last_updated_by: Dennys
   last_updated_on: 2014-09-23 14:58:41.000000000 Z
