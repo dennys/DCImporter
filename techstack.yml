@@ -1,7 +1,8 @@
 repo_name: dennys/DCImporter
-report_id: 36a031f20917e4acc8276e3975f7f808
+report_id: 1cecb43cc4c4334378bea94f0c73b9bd
+version: 0.1
 repo_type: Public
-timestamp: '2023-12-14T09:24:43+00:00'
+timestamp: '2024-01-04T14:53:08+00:00'
 requested_by: dennys
 provider: github
 branch: master
@@ -30,6 +31,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/dennys/DCImporter
   detection_source: Repo Metadata
 - name: ".NET"
   description: A free, cross-platform, open source developer platform for building
@@ -41,6 +43,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/dennys/DCImporter/blob/master/DCImporter/packages.config
   detection_source: DCImporter/packages.config
   last_updated_by: Dennys
   last_updated_on: 2014-09-23 14:58:41.000000000 Z
@@ -52,6 +55,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/dennys/DCImporter
   detection_source: Repo Metadata
 - name: NuGet
   description: The package manager for .NET
@@ -61,6 +65,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/dennys/DCImporter/blob/master/DCImporter/packages.config
   detection_source: DCImporter/packages.config
   last_updated_by: Dennys
   last_updated_on: 2014-09-23 14:58:41.000000000 Z
@@ -73,6 +78,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Integrated Development Environment
   image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/dennys/DCImporter/blob/master/DCImporter.sln
   detection_source: DCImporter.sln
   last_updated_by: Dennys
   last_updated_on: 2014-09-23 14:49:38.000000000 Z
